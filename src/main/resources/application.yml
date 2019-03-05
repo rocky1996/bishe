@@ -1,4 +1,14 @@
 spring:
+
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bishe
+    username: root
+    password: 123456wjf
+
   redis:
     host: 127.0.0.1
     password: 123456

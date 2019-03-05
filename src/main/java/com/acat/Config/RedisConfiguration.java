@@ -1,4 +1,4 @@
-package com.acat.config;
+package com.acat.Config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -7,14 +7,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-public class RestConfiguration {
+public class RedisConfiguration {
 
     @Autowired
-    private RestTemplateBuilder builder;
+    private RestTemplateBuilder restTemplateBuilder;
 
     @Bean
     public RestTemplate restTemplate(){
-        return builder.build();
+        return restTemplateBuilder.build();
     }
 
 }
